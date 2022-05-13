@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leticia_e_Aparecida</title>
+
+<style>
+*{
+ 
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            padding: 8px;
+
+         }
+
+         .table{
+        background-color:rgb(241, 165, 103);
+
+         }
+
+body{
+    background-color: rgb(240, 192, 130);
+    display: grid;
+    justify-content: center;
+}
+</style>
+
+
+</head>
+<body>
+<div class="container">
+<table class="table" border="2">
+
+    <h1>. . . .       Planilha de Cálculos   . . . .</h1>
+    <thead>
+        <th>Codigos</th>
+        <th>Descrição</th>
+        <th>Valor</th>
+
+    </thead>
+    <tbody>
+        <tr>
+
+            <th colspan="3" >  RECEITAS</th>
+            
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>valor base (R$)</td>
+            <td>
+                <input type="number" form="formulario" id="v1">
+            </td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Ajuda com transporte (R$)</td>
+            <td>
+                <input type="number" form="formulario" id="v2">
+            </td>
+        </tr>
+
+
+     
+        <tr>
+            <td>3</td>
+            <td>Ajuda alimentação (R$)</td>
+            <td>
+                <input type="number" form="formulario" id="v3">
+            </td>
+        </tr>
+        
+        <tr>
+            <td>4</td>
+            <td>Receita total (R$)</td>
+            <td>
+                <input type="number" form="formulario" id="v4" disabled>
+            </td>
+        </tr>
+
+        <tr>
+
+            <th colspan="3"> DESCONTOS </th>
+            
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Desconto de automóvel(R$)</td>
+            <td>
+                <input type="number" form="formulario" id="v5">
+            </td>
+        </tr>
+
+        <tr>
+            <td>6</td>
+            <td>Faltas(R$)</td>
+            <td>
+                <input type="number" form="formulario" id="v6">
+            </td>
+        </tr>
+
+        <tr>
+            <td>7</td>
+            <td>Descontos total(R$)</td>
+            <td>
+                <input type="number" form="formulario" id="show" disabled>
+            </td>
+        </tr>
+
+    
+        <tr>
+
+            <th colspan="3"> TOTAL </th>
+            
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Total(R$)</td>
+            <td>
+                <input type="number" form="formulario" id="total" disabled>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
+
+<form id="formulario" action="">
+
+  <button type="submit" value="Calcular" nome="Calcular" id="calcular">Calcular</button>
+
+
+  <input type="reset" value="Cancelar" nome="Cancelar" id="cancelar"> 
+
+</form>
+
+</div>
+
+  <script src="index.js"></script>
+</body>
+</html>
